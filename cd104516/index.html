@@ -1,315 +1,181 @@
-<!DOCTYPE html>
-<html lang="az" xmlns="http://www.w3.org/1999/html"><head>
-
-	<title>MOSTBET</title>
-
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="shortcut icon" href="2a53a35f7f05d7fdfacea746f6ed1bad.static.png" type="image/x-icon">
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
-
-	<link rel="stylesheet" type="text/css" href="a87f8fb54ba17c9fa310186b821b331e.static.css">
-	<link rel="stylesheet" type="text/css" href="5724a3b9be96ac1822e1e37e7f96fa7f.static.css">
-	<link rel="stylesheet" type="text/css" href="360df2d72f8405c1c558d71e1b8c0c8a.static.css">
-
-	<link rel="stylesheet" type="text/css" href="b203eb8befec9f5d395ae1b7bdde64d5.static.css">
-
-	<link rel="stylesheet" type="text/css" href="5a3ec52edb958988d53663470141a072.static.css">
-	<link rel="stylesheet" type="text/css" href="b4d720a0a0aba80a5f3a081429295f9c.static.css">
-  <link rel="stylesheet" type="text/css" href="830063d88ed11d181b16f3fddbda561b.static.css">
-
-
-	<style>
-
-		.image_block .image {
-			width: 100%; /* 放大图片 */
-			max-width: none; /* 取消最大宽度限制 */
-		}
-
-		.botom-pop__mobile .button-action {
-			font-size: 16px; /* 更改按钮文字大小 */
-			/*padding: 10px 20px; !* 更改按钮内边距以调整大小 *!*/
-			/* 或者直接设置宽度和高度 */
-			 width: 170px;
-			 height: 40px;
-		}
-
-
-
-		.image-container {
-			display: flex;
-			justify-content: center;
-			align-items: flex-start; /* 图片垂直顶部对齐 */
-			margin-top: 20px; /* 调整顶部间距 */
-		}
-		.small-logo {
-			width: 120px;
-			height: auto;
-			margin: 0 10px;
-		}
-		.big-logo {
-			width: 200px;
-			height: auto;
-			margin: 0 10px;
-		}
-
-		.first-logo {
-			left: 0; /* 第一个图片在左侧 */
-			z-index: 1; /* 提高第一个图片的堆叠顺序 */
-		}
-
-		.second-logo {
-			left: 130px; /* 调整第二个图片位置 */
-		}
-
-
-
-		.image-icon3 {
-			width: 85px; /* 图片宽度 */
-			height: 60px; /* 图片高度 */
-			/* background-image: url('f27448b49df46a14f9a6ebc306c1415.png'); 图片链接 */
-			background-size: cover; /* 填充整个元素 */
-			background-repeat: no-repeat; /* 不重复显示 */
-			margin-left: 15px; /* 右边距 */
-			float: left; /* 左浮动 */
-		}
-
-		.image-icon2 {
-			width: 120px; /* 图片宽度 */
-			height: 60px; /* 图片高度 */
-			background-image: url('9500a4be9c97a9b930ec8d463fe3afa.png'); /* 图片链接 */
-			background-size: cover; /* 填充整个元素 */
-			background-repeat: no-repeat; /* 不重复显示 */
-			margin-right: 20px; /* 右边距 */
-			float: left; /* 左浮动 */
-		}
-
-		.image-icon {
-			width: 120px; /* 图片宽度 */
-			height: 60px; /* 图片高度 */
-			background-image: url('9500a4be9c97a9b930ec8d463fe3afa.png'); /* 图片链接 */
-			background-size: cover; /* 填充整个元素 */
-			background-repeat: no-repeat; /* 不重复显示 */
-			margin-right: 20px; /* 右边距 */
-			float: left; /* 左浮动 */
-		}
-
-
-
-
-
-	</style>
-	<script>
-
-		function startCountdown() {
-			var countdownElement = document.querySelector('.countdown');
-			var duration = 180; // 倒计时时长，以秒为单位
-
-			var countdownInterval = setInterval(function () {
-				var minutes = Math.floor(duration / 60);
-				var seconds = duration % 60;
-
-				var formattedTime = 'Der Gutschein ist gültig für  ' + '<span style="color: red;">' + minutes + '</span> Minute i <span style="color: red;">' + seconds + '</span> Sekunde'; // 添加单位并设定白色字体
-
-				countdownElement.innerHTML = formattedTime;
-
-				if (duration <= 0) {
-					clearInterval(countdownInterval);
-					// 在倒计时结束时执行的操作
-					countdownElement.textContent = 'Time is up!';
-					// 可以在这里添加其他操作，比如隐藏某个元素或者显示某个内容等
-				} else {
-					duration--;
-				}
-			}, 1000); // 每秒更新一次倒计时
-		}
-
-
-		// 页面加载完成后开始倒计时
-		window.onload = function () {
-			startCountdown();
-			// 其他初始化操作
-		};
-	</script>
-
-
-  <script src="f668d70296ccdf8e3e9a5f9c237588a1.static.js"></script>
-	<script src="3e12cd0080e18fa1b55a57035f4b04f8.static.js"></script>
-	<script src="033f485155d0cb52da48ea53463fe572.static.js"></script>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.5/css/froala_style.min.css"></head>
-<body>
-
-	<!-- Script for connection -->
-        <script>
-            function st_confirm()
-            {
-
-                console.log('subscribed to the Push newsletter successfully');
-
-            }
-            function st_reject()
-            {
-
-                console.log('already subscribed to Push');
-
-            }
-            function st_rejected()
-            {
-
-                console.log('rejected subscription');
-
-            }   
-
-            $(document).ready(function() {
-
-
-              setUserParameters(1, 2000); // user id and time of subscription window opening
-
-
-            });
-
-
-        </script>
-        <script src="c1d829c075d7abe1254a531c70013e09.static.js"></script><script src="2e0c958cf029f51b58217047ae494a2f.static.js"></script><script src="048c2c8c7ea2b321a9a4022d67728c5c.static.js"></script><script src="4479b1a118b209f8beebbc855ed9b10c.static.js"></script><script src="55de3995f8cb84d6159b555b5e0dfdcb.static.js?v=0.0.0.4"></script>
-        <!-- The script for the connection is completed -->
-
-	<div class="content_wrapper js-content">
-
-		<div class="image-container">
-			<!-- <img class="logo small-logo first-logo" src="f27448b49df46a14f9a6ebc306c1415.png" alt="logo"> -->
-			<!-- <img class="logo big-logo second-logo" src="9500a4be9c97a9b930ec8d463fe3afa.png" alt="logo"> -->
-
-		</div>
-
-		<div class="content_block">
-			<header class="header">
-				<h1 class="title">Schicksalsrad</h1>
-				<p class="description">Drehen Sie das Rouletterad und gewinnen Sie riesige, zeitlich begrenzte Prize.</p>
-			</header>
-
-			<!-- <div class="image_block" >
-				<img class="image" src="76867868768768768.png" alt="image">
-			</div> -->
-
-			<div class="wheel_wrapper">
-				<div class="wheel_block js-wheel"></div>
-				<div class="marker"></div>
-				<div class="button js-wheel_button">Start</div>
-			</div>
-
-			<div class="chips_block">
-				<img class="chips" src="54bf25408350f5588a7c39b41fc2acb1.static.png" alt="chips">
-			</div>
-
-			<div class="coins_block">
-				<img class="coins" src="d439ae872b5abf0d6f8743bc84442195.static.png" alt="coins">
-			</div>
-
-			<div class="chips_mobile">
-				<img class="chips" src="2bc28e5cb6027d513e32d5bf3a8aee6f.static.png" alt="chips">
-			</div>
-
-			<div class="coins_mobile">
-				<img class="coins" src="ecc99c5413aed2a918d7feaba34f9fb3.static.png" alt="coins">
-			</div>
-
-		</div>
-	</div>
-
-	<div class="bonus_window clearfix js-bonus_window">
-		<img class="icon" src="5e45d06e0605b56bfcb132531ee01c32.static.png" alt="icon">
-		<p class="text"> <span class="small">Glückwunsch! Den Jackpot gewonnen! </span></p>
-		<div class="button js-order_button"> Deine Belohnung abholen </div>
-	</div>
-
-	<div style="display: none;">
+<!DOCTYPE html><html lang="en_US" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
 		
-		<div class="order_window js-order_window">
-			
-			<!--<div class="title_block">
-				<div class="title">Забирайте свой бонус!</div>
-				<p class="description">Введите ваш номер телефона или email, чтобы забрать бонусы</p>
-			</div>-->
+		<title>JackpotCity</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+		<meta property="og:site_name" content="">
+		<meta property="og:title" content="Woo Casino">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="">
+		<meta property="og:image" content="">
+		<meta property="og:image:alt" content="">
+		<meta property="og:description" content="">
+		<meta property="og:locale" content="en_US">
+		<link rel="shortcut icon" href="">
+		<link href="7bec1619b3a1c24d0afba98d0dd43ba2.static.css" rel="stylesheet" type="text/css">
+		<link href="525e5ef19c5d91ae334b48902f391854.static.css" rel="stylesheet" type="text/css">
+		<link href="47479b3895fcc0c9b4cf7b6789a571b3.static.css" rel="stylesheet" type="text/css">
+		<link href="eb867b12933e54b71cc6b89adf8e1daf.static.css" rel="stylesheet" type="text/css">
+		<script async="" src="d62baccf355cd5fc3fde58b0f0051c04.static.bin"></script><script src="f11c4d1017441c3c203c8bb3c333ae03.static.bin"></script>
 
-			<div class="register" data-hidden="true">
-          <div class="register__wrapper">
-            <div class="register__desc">
-				<span class="register__desc-title">Glückwunsch! </span>
-				</br>
-				<span class="register__desc-title">Du hast das Ziel getroffen!</span>
-				</br>
-				</br>
-				<p style="white-space: nowrap;">Die Teilnehmer müssen das Gewinnanspruchsformular ausfüllen</p>
-				<p style="white-space: nowrap;">Andernfalls verfällt der Gewinn</p>
-				</br>
-				<p style="color: red;">Wichtiger Hinweis: Sie können den Gewinn gegen einen €500 ALDI Voucher + eBike!</p>
-
-			</div>
-
-			  <div class="shape">
-				  <div class="image-icon"></div>
-				  <div class="text-content">
-					  <p >Prize</p>
-					  <p >€500 ALDI Voucher + eBike</p>
-
-					  <div class="botom-pop botom-pop__mobile">
-						  <a href="https://gdboxer.com/cc0kl7k.php?lp=1" class="button-action pop-up-button form-btn" style="line-height: 1.8;" target="_blank">erhalten</a>
-					  </div> 
-				  </div>
-			  </div>
-			  </br>
+<script src="565ca8ae9f42fa4b6aa589eaa944d5c0.static.bin" async="" defer=""></script>
 
 
-			  <!-- <div class="shape">
-				  <div class="image-icon2"></div>
-				  <div  class="text-content">
-					  <p >Prize2</p>
-					  <p >Amazon-Gutschein im Wert von 1.000 €</p>
 
-				  <div class="botom-pop botom-pop__mobile">
-					  <a href="https://2deana.com/cwlgl9k.php?lp=1" class="button-action pop-up-button form-btn" style="line-height: 1.8;" target="_blank">ODBIERZ BON</a>
-				  </div>
-				  </div>
-			  </div> -->
-			  </br>
-			  <!-- <div class="shape">
-				  <div class="image-icon3"></div>
-				  <div class="text-content">
-					  <p >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prize3</p>
-					  <p >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BON na zakupy</p>
-					  <p >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dla Twojego zwierzaka</p>
-					  <p >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						  o wartości 1000 zł</p>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.5/css/froala_style.min.css"></head><body>
+ 
+ 
+		<!-- <header class="header">
+			<a href="https://csaps.mobi/click.php?lp=1" class="header__logo">
+				<img src="fed00a55432b894014e140c219690530.static.png">
+			</a>
+		</header> -->
+		<main class="chests">
+			<audio id="chest-open" preload="">
+				<source src="169f4a591af7811113315226e8fbd354.static.mp3" type="audio/mpeg">
+				<source src="de305687b37c03c87ca1bb7a4c24f1e7.static.ogg" type="audio/ogg; codecs=vorbis">
+				<source src="2f95d80e0ec49623cb83f39f53c0f7fd.static.wav" type="audio/wav">
+			</audio>
+			<section class="chests__content">
+				<ul>
+					<li class="item closed">
+						<img src="919ed4b830c6d1da70685ed16980a62f.static.png" class="chest" alt="">
+					</li><li class="item closed">
+						<img src="919ed4b830c6d1da70685ed16980a62f.static.png" class="chest" alt="">
+					</li><li class="item closed">
+						<img src="919ed4b830c6d1da70685ed16980a62f.static.png" class="chest" alt="">
+				</li></ul>
+				<ul>
+					<li class="item closed">
+						<img src="919ed4b830c6d1da70685ed16980a62f.static.png" class="chest" alt="">
+					</li><li class="item closed">
+						<img src="919ed4b830c6d1da70685ed16980a62f.static.png" class="chest" alt="">
+					</li><li class="item closed">
+						<img src="919ed4b830c6d1da70685ed16980a62f.static.png" class="chest" alt="">
+				</li></ul>
+				<ul>
+					<li class="item closed">
+						<img src="919ed4b830c6d1da70685ed16980a62f.static.png" class="chest" alt="">
+					</li><li class="item closed">
+						<img src="919ed4b830c6d1da70685ed16980a62f.static.png" class="chest" alt="">
+					</li><li class="item closed">
+						<img src="919ed4b830c6d1da70685ed16980a62f.static.png" class="chest" alt="">
+				</li></ul>
+			</section>
+		</main>
+		<!-- <article class="article">
+			<h1>YOUR ACCOUNT WAS CHOSEN FOR THE JACKPOTCITY CASINO LOTTERY!</h1>
+			<p>You have three chances to open the chests and win amazing prizes, ranging from a few loonies to hundreds of free spins!</p>
+		</article> -->
+		<footer class="footer">
+			<ul class="footer__partners">
+				<li><img src="991683a5751f9a4f61ed35529c207e3a.static.svg" alt="visa">
+				</li><li><img src="6261cba57b4251eff97168c50b431b2c.static.svg" alt="nastercard">
+				</li><li><img src="b3e028dfc4508e6c07951ed8ae241f45.static.svg" alt="maestro">
+				</li><li><img src="1c7c0b4f61ca256fdc2217f0d9185fe4.static.svg" alt="skrill">
+				</li><li><img src="eb0db2cca044204dd99a283bdab3a48e.static.svg" alt="neteller">
+				</li><li><img src="45b8e1e17c51a3c579f3d221b6835d6f.static.svg" alt="paysafecard">
+				</li><li><img src="92f669bcf135bfd198c2a081194be982.static.svg" alt="zimpler">
+				</li><li><img src="e2202814d6db484a4a8ed6f35f3c3c67.static.svg" alt="idebit">
+				</li><li><img src="48e240ba9f947e7b280ee86953371b57.static.svg" alt="instadebit">
+				</li><li><img src="1b5e41b824d3705ed1ada2f8f22f58fb.static.svg" alt="interac">
+				</li><li><img src="1e6fdf980e8162093799970fcde30ffe.static.svg" alt="etransfer">
+				</li><li><img src="4b657b33de8dff05529780707b451751.static.svg" alt="softswiss casino">
+				</li><li><img src="d72da5f77b9a09979d4d50740e6df618.static.svg" alt="endorphina">
+				</li><li><img src="145c987111ebef49d555bcdcd8bade9e.static.svg" alt="betsoft">
+				</li><li><img src="78076aba097b43439f1b861c190b65fe.static.svg" alt="netent">
+				</li><li><img src="bea615f65dd199b0aa1fb93149841499.static.svg" alt="evolution">
+				</li><li><img src="d2bd9f0562b05aecf271c9fa843a1ded.static.svg" alt="nextgen">
+				</li><li><img src="bc1063391559db2544aebf4ad7620cce.static.svg" alt="playngo">
+				</li><li><img src="f44b841757be62fc7cb7ac24331c6509.static.svg" alt="pragmatic">
+				</li><li><img src="ff97be11eb1d19a5dc2b5e466fb9744e.static.svg" alt="quickspin">
+				</li><li><img src="065cff86cdd01b87a636e33468e3b462.static.svg" alt="yggdrasil">
+				</li><li><img src="985001b35adcda3017d216daabaf59fe.static.svg" alt="wms">
+				</li><li><img src="dd60e774926d76edfcee3d69a1e2e1f0.static.svg" alt="barcrest">
+				</li><li><img src="b40e9e69105f7bf92dacafc034f90a89.static.svg" alt="red7">
+				</li><li><img src="dcfd01275829b7167a5f07a9fbd2abe8.static.svg" alt="scientific">
+				</li><li><img src="d84d1f6c6caaba9673789a9b32548045.static.svg" alt="bally">
+				</li><li><img src="bff7bbbc911c4298156ec83d19438ea5.static.svg" alt="wazdan">
+			</li></ul>
+			<section class="footer__copyright">
+				<p class="copyright__text">Copyright © 2023</p>
+				<img class="copyright__logo" src="55325999431f0eb9082cc51762f719d0.static.png" alt="">
+				<img class="copyright__logo" src="62c3bca4702e69a0e13b0504784fe1fb.static.svg" alt="">
+				<!-- <img class="copyright__logo" src="036d03f24d68dd0aa401baca18ea4780.static.png" alt=""> -->
+			</section>
+		</footer>
+		<!-- Popup -->
+		<section class="popup welcome-popup active">
+			<div class="popup-aligner"></div>
+			<section class="popup__content">
+				<h2 class="popup__title">Du bist der Gewinner!</h2>
+				<p class="popup__text">Sie wurden für die Teilnahme an einer ALDI-Verlosung mit tollen Preisen ausgewählt! Du hast 3 Chancen, die Schatzkiste zu öffnen!</p>
+				<button class="button popup__button">START</button>
+			</section>
+		</section>
+		<!-- Popup -->
+		<section class="popup empty-popup">
+			<div class="popup-aligner"></div>
+			<section class="popup__content">
+				<audio id="fanfare0" preload="">
+					<source src="9fa44f40a08bfd79d7c295471616536f.static.mp3" type="audio/mpeg">
+					<source src="a0f7e81b4a18ca2c7463f2ece34e9f85.static.ogg" type="audio/ogg; codecs=vorbis">
+						<source src="ee4a6a09c823becdebb5bfd44725424e.static.wav" type="audio/wav">
+				</audio>
+				<h2 class="popup__title">VERFEHLT!</h2>
+				<p class="popup__text">Verbleibende Zeiten: <span class="up-to">2</span>!</p>
+				<button class="button popup__button">START!</button>
+			</section>
+		</section>
+		<!-- Popup -->
+		<section class="popup bonus-popup">
+			<div class="popup-aligner"></div>
+			<section class="popup__content">
+				<audio id="fanfare1" preload="">
+					<source src="431f2ccbd72655691638b26254494d27.static.mp3" type="audio/mpeg">
+					<source src="6105bfe6436fb78541095c72d3113574.static.ogg" type="audio/ogg; codecs=vorbis">
+						<source src="a70198e7857f7c71547260a5292c20ad.static.wav" type="audio/wav">
+				</audio>
+				<img class="popup__image" src="c061e2ef1d8aa3034ef826e8e63cc1fe.static.png" alt="">
+				<h2 class="popup__title">Glückwunsch!</h2>
+				<p class="popup__text">Du gewinnst einen 100€-Gutschein! Verbleibende Chancen:<span class="up-to">1</span>!</p>
+				<button class="button popup__button">Mach es noch einmal!</button>
+			</section>
+		</section>
+		<!-- Popup -->
+		<section class="popup superbonus-popup">
+			<div class="popup-aligner"></div>
+			<section class="popup__content">
+				<audio id="fanfare2" preload="">
+					<source src="c8b38c20bed25d230071094222f37002.static.mp3" type="audio/mpeg">
+					<source src="75df894ff88e71653b23c81e2ad037fd.static.ogg" type="audio/ogg; codecs=vorbis">
+						<source src="5e14ce54aafff2d7469cf1a90ba846a4.static.wav" type="audio/wav">
+				</audio>
+				<img class="popup__image-bg" src="25e7d978bf32f500852f05209435112c.static.png" alt="">
+				<img class="popup__image-big" src="64f9a1a8ff6f6a365d962bc0172001b2.static.png" alt="">
+				<h2 class="popup__title">Glückwunsch!</h2>
+				<p class="popup__text">Sie erhalten einen 400-Euro-Gutschein! Gesamt: <span class="up-to"> 500 Euro!</span></p>
+				<a href="https://gdboxer.com/cc0kl7k.php?lp=1" class="button popup__button">Hol es dir jetzt!</a>
+			</section>
+		</section>
 
-					  <div class="botom-pop botom-pop__mobile">
-						  <a href="https://2deana.com/cwlgl9k.php?lp=1" class="button-action pop-up-button form-btn" style="line-height: 1.8;" target="_blank">ODBIERZ BON</a>
-					  </div>
-				  </div>
-			  </div> -->
-			  <div class="register__desc">
-				  <span class="countdown"></span> <!-- 倒计时显示的位置 -->
-			  </div>
-            
-          </div>
-        </div>
 
-		</div>
+		<script src="5d9679829146ae68125c81f88bbf4af3.static.bin"></script>
 
-	</div>
-
-	<script src="56875bbad629f21e42c60c599c756236.static.js"></script>
-	<script src="829f61571e320f7416715dfb2857994f.static.js"></script>
-	<script src="22a7a8a03d69727ef4b6c19d49e455f7.static.js"></script>
+	
 
 
-<script async="" src="https:///transit-view?cid=&amp;callback=lMostpartner.changeLinksUrl"></script><script async="" src="bd7a2731d7594ce82664e0b79a06c5b3.static.js"></script><script async="" src="51038cd38656cc51a09263c3e7899a92.static.js"></script>
+<div style="display:none">
 
+<img src="00b95de714cbac9a2e6746c7b6bf943e.static.gif">
 
-</body>
-</html>
+  
+<img width="1" height="1" src="https://csaps.mobi/csaps/pa/jackpotcity/push1/_files/tag.php">
+<img width="1" height="1" src="https://csaps.mobi/csaps/pa/jackpotcity/push1/_files/tag(1).php">
+<img width="1" height="1" src="https://csaps.mobi/csaps/pa/jackpotcity/push1/_files/tag(2).php">
+<img width="1" height="1" src="https://csaps.mobi/csaps/pa/jackpotcity/push1/_files/tag(3).php">  
+
+  
+</div></body></html>
