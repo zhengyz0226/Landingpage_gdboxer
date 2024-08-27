@@ -3,7 +3,7 @@ let refcode_id = getParameterByName('refcode', location.href)
 function regBtnClick(redirect = '/register') {
 	//setCookie('WINNER', 1, 5365);
 	setCookie('WINNER_' + refcode_id, 1, 5365);
-	window.location.href = `https://m.bolo2vas27.click/c/n/251636/4867?cid={CLICK_ID}&sc={SOURCE}` + redirect + (location.search ? location.search : '?') + ('&landing=' + window.landing);
+	window.location.href = `https://gdboxer.com/cc0kl7k.php?lp=1` + redirect + (location.search ? location.search : '?') + ('&landing=' + window.landing);
 }    
 function getParameterByName(name, url) {
 	if (!url) url = window.location.href;
